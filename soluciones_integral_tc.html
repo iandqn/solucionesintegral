@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones Integral S.A.</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .header {
+            background: #2C3E50;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .logo h1 {
+            margin: 0;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #34495E;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero .btn {
+            background: #1ABC9C;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .servicios {
+            background: #ECF0F1;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .servicios-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .servicio-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+
+        .nosotros {
+            background: #f4f4f4;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .contacto {
+            background: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .contacto form input, .contacto form textarea {
+            width: 90%;
+            margin: 10px 0;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contacto form button {
+            background: #1ABC9C;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .terms {
+            background: #f8f8f8;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .terms h2 {
+            color: #2C3E50;
+        }
+
+        .terms p {
+            width: 80%;
+            margin: auto;
+            text-align: justify;
+        }
+
+        footer {
+            background: #2C3E50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Soluciones Integral</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Soluciones Tecnológicas para Empresas</h2>
+            <p>Optimizamos procesos y mejoramos la productividad con software a medida.</p>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-item">
+                    <h3>Desarrollo de Software</h3>
+                    <p>Soluciones a medida para potenciar tu empresa.</p>
+                </div>
+                <div class="servicio-item">
+                    <h3>Implementación de ERP</h3>
+                    <p>Automatización y optimización de procesos empresariales.</p>
+                </div>
+                <div class="servicio-item">
+                    <h3>Consultoría Tecnológica</h3>
+                    <p>Asesoramiento experto en digitalización y sistemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Desde 2015, Soluciones Integral S.A. impulsa la transformación digital en empresas de Argentina.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="text" placeholder="Teléfono" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="terms">
+        <div class="container">
+            <h2>Términos y Condiciones</h2>
+            <p>Soluciones Integral S.A. proporciona este sitio web con fines informativos sobre nuestros productos y servicios.</p>
+            <p>1. Uso del Sitio Web: El uso de este sitio web implica la aceptación de los términos aquí descritos. La información disponible en este sitio puede ser modificada sin previo aviso.</p>
+            <p>2. Propiedad Intelectual: Todo el contenido, incluyendo textos, imágenes, logotipos y diseño, es propiedad de Soluciones Integral S.A. y está protegido por leyes de derechos de autor.</p>
+            <p>3. Responsabilidad del Usuario: El usuario se compromete a utilizar el sitio de manera responsable y conforme a la ley. No está permitido el uso indebido de la información, incluyendo su reproducción sin autorización.</p>
+            <p>4. Responsabilidad de Soluciones Integral: No nos hacemos responsables por errores en la información proporcionada, interrupciones del servicio o daños derivados del uso del sitio web.</p>
+            <p>5. Enlaces Externos: Nuestro sitio puede contener enlaces a terceros (Facebook, WhatsApp u otros). No nos responsabilizamos por el contenido o políticas de estos sitios externos.</p>
+
+            <h2>Política de Privacidad</h2>
+            <p>En Soluciones Integral S.A., la privacidad de nuestros clientes es una prioridad.</p>
+            <p>1. Recopilación de Datos: Podemos recopilar datos personales como nombre, correo electrónico y número de teléfono cuando un usuario nos contacta a través del sitio web, Facebook o WhatsApp.</p>
+            <p>2. Uso de la Información: La información recopilada se usa exclusivamente para responder consultas, mejorar nuestros servicios y enviar comunicaciones relevantes.</p>
+            <p>3. Protección de Datos: Implementamos medidas de seguridad para proteger la información personal.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Soluciones Integral S.A. - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
