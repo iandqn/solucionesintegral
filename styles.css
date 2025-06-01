@@ -1,0 +1,196 @@
+/* styles.css */
+
+ body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Un negro muy oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #f0f0f0; /* Texto casi blanco para contraste */
+  line-height: 1.6;
+ }
+
+ /* Animación para la aparición del contenedor */
+ @keyframes fadeInScale {
+  from {
+   opacity: 0;
+   transform: scale(0.95);
+  }
+
+  to {
+   opacity: 1;
+   transform: scale(1);
+  }
+ }
+
+ .contenedor {
+  background-color: #1e1e1e; /* Un gris oscuro para el contenedor */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en tema oscuro */
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  box-sizing: border-box;
+  animation: fadeInScale 0.8s ease-out forwards;
+ }
+
+ .logo {
+  max-width: 120px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra clara para el logo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Sombra más pronunciada al pasar el mouse */
+ }
+
+ h1 {
+  color: #25D366; /* Verde de WhatsApp */
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  font-weight: 700;
+ }
+
+ .subtitulo {
+  color: #90ee90; /* Un verde más claro para el subtitulo */
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  font-weight: 400;
+ }
+
+ .bono {
+  background-color: #333333; /* Un gris más oscuro para el bono */
+  color: #25D366; /* Verde de WhatsApp */
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra clara para el bono */
+ }
+
+ /* Estilos mejorados para el botón de WhatsApp */
+ .boton-whatsapp {
+  display: block;
+  background-color: #25D366;
+  /* El verde principal de WhatsApp */
+  color: white;
+  padding: 20px 35px;
+  /* Aún más grande y acolchado */
+  border-radius: 35px;
+  /* Bordes más redondeados */
+  text-decoration: none;
+  font-size: 1.4em;
+  /* Texto más grande */
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  /* Transiciones para más propiedades */
+  box-shadow: 0 12px 20px rgba(37, 211, 102, 0.7);
+  /* Sombra más intensa */
+ }
+
+ .boton-whatsapp:hover {
+  background-color: #1DA851;
+  /* Un verde ligeramente más oscuro al pasar el mouse */
+  transform: translateY(-5px);
+  /* Efecto de elevación más notable */
+  box-shadow: 0 15px 25px rgba(37, 211, 102, 0.9);
+  /* Sombra aún más intensa al hacer hover */
+ }
+
+ /* Estilos mejorados para la lista de beneficios */
+ .beneficios {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+  text-align: left;
+ }
+
+ .beneficios li {
+  background-color: #333333;
+  /* Un gris más oscuro como fondo */
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.05em;
+  color: #f0f0f0;
+  /* Texto casi blanco */
+  box-shadow: 0 3px 7px rgba(255, 255, 255, 0.07);
+  /* Sombra suave para cada ítem */
+  position: relative;
+  /* Necesario para la animación */
+  opacity: 0;
+  /* Inicialmente invisible */
+  transform: translateY(20px);
+  /* Ligeramente abajo */
+  animation: slideIn 0.5s ease-out forwards;
+  /* Animación de entrada */
+ }
+
+ /* Animación de entrada para los beneficios (deslizamiento desde abajo) */
+ @keyframes slideIn {
+  to {
+   opacity: 1;
+   transform: translateY(0);
+  }
+ }
+
+ /* Retraso la aparición de cada beneficio para un efecto secuencial */
+ .beneficios li:nth-child(1) {
+  animation-delay: 0.2s;
+ }
+
+ .beneficios li:nth-child(2) {
+  animation-delay: 0.4s;
+ }
+
+ .beneficios li:nth-child(3) {
+  animation-delay: 0.6s;
+ }
+
+ .beneficios li:nth-child(4) {
+  animation-delay: 0.8s;
+ }
+
+ /* Estilos para los iconos de Font Awesome dentro de los beneficios */
+ .beneficios li .fa-solid {
+  margin-right: 15px;
+  font-size: 1.3em;
+  /* Tamaño un poco más grande para los iconos */
+  color: #25D366;
+  /* Un color verde WhatsApp para los iconos */
+  min-width: 25px;
+  /* Asegura que todos los iconos tengan el mismo ancho para alineación */
+  text-align: center;
+ }
+
+ /* Media queries para responsividad (sin cambios en este caso, ya estaban bien) */
+ @media (max-width: 600px) {
+  h1 {
+   font-size: 1.8em;
+  }
+
+  .subtitulo {
+   font-size: 1em;
+  }
+
+  .bono {
+   font-size: 1.1em;
+  }
+
+  .boton-whatsapp {
+   padding: 15px 25px;
+   font-size: 1.2em;
+  }
+ }
